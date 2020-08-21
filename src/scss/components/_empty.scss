@@ -1,0 +1,20 @@
+@import "../vars";
+
+.empty {
+  text-align: center;
+  font-size: $empty-font-size;
+  font-weight: 700;
+
+  margin: 55px 0;
+
+  &__emoji {
+    font-size: $emoji-font-size;
+  }
+
+  &__text {
+    max-width: 800px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 auto;
+  }
+}

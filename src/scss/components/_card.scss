@@ -1,0 +1,140 @@
+@import "../vars";
+
+$media-body: 550px;
+
+.card {
+  font-size: $main-font-size;
+  margin: 35px 0;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+
+    background-color: $blue-light;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid $blue-border;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+  }
+
+  &__name {
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    font-size: $title-font-size;
+    font-weight: 300;
+    color: $blue;
+
+    @media (max-width: 500px) {
+      max-width: 120px;
+    }
+  }
+
+  &__backslash {
+    font-size: $title-font-size;
+    font-weight: 300;
+    margin: 0 5px;
+  }
+
+  &__stats {
+    $media-stats: 700px;
+
+    &-top {
+      @media (max-width: $media-stats) {
+        display: none;
+      }
+    }
+    &-bottom {
+      display: none;
+      @media (max-width: $media-stats) {
+        display: flex;
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    border: 1px solid $gray-light;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    @media (max-width: $media-body) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 400px) {
+      padding: 30px 15px;
+    }
+  }
+
+  &__avatar {
+    display: block;
+    max-width: 300px;
+    min-width: 200px;
+    width: 100%;
+    border-radius: 5px;
+
+    @media (max-width: $media-body) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__info {
+    max-width: 250px;
+    overflow: hidden;
+    margin-left: 30px;
+
+    @media (max-width: $media-body) {
+      max-width: none;
+      margin-left: 0;
+    }
+  }
+
+  &__description {
+    max-height: 220px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__languages {  
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+  }
+
+  &__lang {
+    margin: 0 10px 8px 0;
+    padding: 4px 10px;
+    
+    font-weight: 700;
+    border-radius: 5px;
+    background: $gray-light;
+    color: $gray;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../vars";
+
+.search-line {
+  margin-bottom: 15px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__input {
+    max-width: 700px;
+    width: 100%;
+    height: 40px;
+    padding: 0 45px 0 20px;
+
+    font-size: $input-font-size;
+    font-weight: 300;
+    color: $black;
+    border-radius: 30px;
+    border: 1px solid $black;
+    outline: none;
+
+    transition: all .25s ease;
+
+    &:hover, &:focus, &:active {
+      border-color: $blue;
+    }
+  }
+}

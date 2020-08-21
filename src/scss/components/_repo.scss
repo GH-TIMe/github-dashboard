@@ -1,0 +1,92 @@
+@import "../vars";
+
+.repo {
+  font-size: $main-font-size;
+  font-weight: 300;
+
+  margin-bottom: 30px;
+
+  &__items {
+    list-style: none;
+  }
+
+  &__item {
+    padding: 15px;
+    border-top: 1px solid $gray-light;
+  }
+
+  &__name {
+    font-size: $title-font-size;
+    font-weight: 300;
+    color: $blue;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    margin-bottom: 8px;
+  }
+
+  &__topics {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    list-style: none;
+  }
+
+  &__topic {
+    margin: 0 10px 8px 0;
+    padding: 4px 10px;
+
+    font-weight: 400;
+    border-radius: 5px;
+    background: $blue-light;
+    color: $blue;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__description {
+    margin-bottom: 8px;
+    overflow: hidden;
+    max-height: 100px;
+  }
+
+  &__stats {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    color: $gray;
+  }
+
+  &__stars {
+    display: flex;
+    margin-right: 12px;
+    align-items: center;
+
+    &-icon {
+      display: block;
+      margin-right: 5px;
+
+      fill: gray;
+
+      transition: all 0.25s ease;
+    }
+
+    &-count {
+      color: $gray;
+
+      transition: all 0.25s ease;
+    }
+
+    &:hover .repo__stars-icon {
+      fill: $blue;
+    }
+    &:hover .repo__stars-count {
+      color: $blue;
+    }
+  }
+}

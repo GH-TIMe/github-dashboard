@@ -1,0 +1,22 @@
+.contributors {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 0;
+
+  &__item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 35px;
+    height: 35px;
+  }
+
+  &__img {
+    display: block;
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,63 @@
+@import "../vars";
+
+.sort {
+  font-size: $main-font-size;
+  margin-bottom: 24px;
+
+  &__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    white-space: nowrap;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-right: 5px;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    margin-right: 12px;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    &.active {
+      color: $blue;
+      cursor: default;
+    }
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 17px;
+    height: 17px;
+
+    margin-left: 5px;
+
+    color: $black;
+  }
+}

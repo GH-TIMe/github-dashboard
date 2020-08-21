@@ -1,0 +1,85 @@
+@import "../vars";
+
+.pagination {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 30px;
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30px;
+    height: 30px;
+    margin-right: 4px;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    &:not(.pagination__item-outside) {
+      @media (max-width: 375px) {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      color: $white;
+      background: $blue;
+    }
+
+    &.hidden {
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+
+    &.disabled {
+      color: $gray;
+      pointer-events: none;
+    }
+
+    &:not(.active):hover {
+      border-color: $gray-light;
+    }
+
+    &-outside {
+      color: $blue;
+      width: auto;
+      padding: 0 5px;
+    }
+  }
+
+  &__text {
+    &:first-child {
+      margin-right: 5px;
+    }
+    &:last-child {
+      margin-left: 5px;
+    }
+  }
+
+  &__icon {
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    &:last-child {
+      transform: rotate(180deg);
+    }
+  }
+}

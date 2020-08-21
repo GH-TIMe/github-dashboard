@@ -1,0 +1,22 @@
+@import "../vars";
+
+.link {
+  color: $black;
+  text-decoration: none;
+
+  &_header {
+    color: $blue;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+
+    transition: all 0.25s ease-out;
+
+    &:hover {
+      text-decoration-color: $blue;
+    }
+  }
+
+  &:hover {
+    color: $blue;
+  }
+}
