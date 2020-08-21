@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/github-dashboard/static/css/main.820cf599.chunk.css",
+    "main.js": "/github-dashboard/static/js/main.9060f0f0.chunk.js",
+    "main.js.map": "/github-dashboard/static/js/main.9060f0f0.chunk.js.map",
+    "runtime-main.js": "/github-dashboard/static/js/runtime-main.cb2b332b.js",
+    "runtime-main.js.map": "/github-dashboard/static/js/runtime-main.cb2b332b.js.map",
+    "static/js/2.37241e70.chunk.js": "/github-dashboard/static/js/2.37241e70.chunk.js",
+    "static/js/2.37241e70.chunk.js.map": "/github-dashboard/static/js/2.37241e70.chunk.js.map",
+    "index.html": "/github-dashboard/index.html",
+    "precache-manifest.45caf2f56f3204e57cfdc280e89a1f52.js": "/github-dashboard/precache-manifest.45caf2f56f3204e57cfdc280e89a1f52.js",
+    "service-worker.js": "/github-dashboard/service-worker.js",
+    "static/css/main.820cf599.chunk.css.map": "/github-dashboard/static/css/main.820cf599.chunk.css.map",
+    "static/js/2.37241e70.chunk.js.LICENSE.txt": "/github-dashboard/static/js/2.37241e70.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/github-dashboard/static/media/roboto-v20-latin_cyrillic-ext-regular.fa18727a.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb2b332b.js",
+    "static/js/2.37241e70.chunk.js",
+    "static/css/main.820cf599.chunk.css",
+    "static/js/main.9060f0f0.chunk.js"
+  ]
+}
