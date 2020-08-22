@@ -17,7 +17,6 @@ export const fetchRepos = (searchQuery, sortBy, order, page) => (dispatch) => {
       !searchQuery ? DEFAULT_QUERY : searchQuery
     }&${SORT}${sortBy}&${ORDER}${order}&${PAGE}${page}&${PER_PAGE}`
   );
-  // обновить страницу для поиска, ибо можно получить один элемент на 3 стр., что покажет пустой массив, хотя в нём есть один элемент
   repos
     .then(({ data }) => {
       Promise.all([
@@ -42,7 +41,10 @@ export const fetchRepos = (searchQuery, sortBy, order, page) => (dispatch) => {
           ),
       ]);
     })
-    .catch((error) => alert(error));
+    .catch((error) =>
+      alert(`${error}
+      Reached rate limit: 60 requests per hour`)
+    );
 };
 
 export const setLoadingStatus = (status) => ({
